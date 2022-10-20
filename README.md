@@ -56,28 +56,28 @@ Support yet to be Implimented.
 
 As its an VGA RGB adapter there is 3 ADC's
 
--d device_index (default: 0)]
+`-d` device_index (default: 0)
 
--s samplerate (default: 100 MS/s) you can write(ntsc) or (pal)]
+`-s` samplerate (default: 100 MS/s) you can write `-s ntsc` or `-s pal`
 
--u Set sample type to unsigned]
+`-u` Set sample type to unsigned
 
--R filename (use '-' to read from stdin)
+`-R` filename (use '-' to read from stdin)
 
--G filename (use '-' to read from stdin)
+`-G` filename (use '-' to read from stdin)
 
--G filename (use '-' to read from stdin)
+`-G` filename (use '-' to read from stdin)
 
--R16 (convert bits 16 to 8)
+`-R16` (convert bits 16 to 8)
 
--G16 (convert bits 16 to 8)
+`-G16` (convert bits 16 to 8)
 
--B16 (convert bits 16 to 8)
+`-B16` (convert bits 16 to 8)
 
--tbcR interpret R as tbc file
+`-tbcR` interpret R as tbc file
 
--tbcG interpret G as tbc file
+`-tbcG` interpret G as tbc file
 
--tbcB interpret B as tbc file
+`-tbcB` interpret B as tbc file
 
 #### Based off the [osmo_fl2K project](https://osmocom.org/projects/osmo-fl2k/wiki) software.
