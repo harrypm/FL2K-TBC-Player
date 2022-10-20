@@ -22,7 +22,7 @@ Decompress the .zip file.
 
 For GUI users 
 
-fl2k-tbc-player .bat 
+Oopen the fl2k-tbc-player.bat file.
 
 For CLI users 
 
