@@ -141,6 +141,12 @@ Also needed is removal of the extra line on each frame
 
 `-tbcB` interpret B as tbc file
 
+`-CgainR` Control Signal Gain Level 
+
+`-CgainG` Control Signal Gain Level 
+
+`-CgainB` Control Signal Gain Level 
+
 ## Example Oprational Commands
 
 ### Composite output on the red channel:
