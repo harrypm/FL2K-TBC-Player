@@ -12,6 +12,14 @@ Its a digital Time Base Corrected lossless 16-bit video file thats in 1 file for
 
 Via [VHS-Decode](https://github.com/oyvindln/vhs-decode) (Tape Decoding) and [LD-Decode](https://github.com/happycube/ld-decode) (LaserDisk Decoding) or [CVBS-Decode](https://github.com/oyvindln/vhs-decode/wiki/CVBS-Composite-Decode) (Composite Decoding) 
 
+## Ware you can buy the FL2K and adapters
+
+The FL2K [Link 1](https://www.aliexpress.com/item/1005002872152601.html?) / [Link 2](https://www.reichelt.de/de/de/adapterkabel-usb-3-0-stecker-vga-buchse-schwarz-delock-62738-p287335.html)
+
+VGA to RCA [Aliexpress](https://www.aliexpress.com/item/1005002872152601.html?)
+
+VGA to BNC Male/Female [Amazon UK](https://www.amazon.co.uk/gp/product/B0033AF5Y0/) /[Amazon USA](https://www.amazon.com/s?k=VGA+to+BNC+Cable&crid=30JGI1TOFQ5I9&sprefix=vga+to+bnc+cable%2Caps%2C165&ref=nb_sb_noss_1)
+
 # Setup 
 
 ## Standardised Cable Config 
@@ -77,6 +85,10 @@ To enter into the install directory use CD
 
 `cd fl2k-tbc-player`
 
+Compile the player with 
+
+`sudo compile.sh`
+
 Run the software with 
 
 `fl2k-tbc-player [insurt example arguments]`
@@ -104,6 +116,8 @@ Also needed is removal of the extra line on each frame
 # Commandlist
 
 `-d` device_index (default: 0)
+
+`-readMode` (default = 0) option : 0 = multit-threading (RGB) / 1 = hybrid (R --> GB) / 2 = hybrid (RG --> B) / 3 = sequential (R -> G -> B)
 
 `-s` samplerate (default: 100 MS/s) allows you to change TV System `-s ntsc` or `-s pal`
 
