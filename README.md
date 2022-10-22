@@ -40,7 +40,7 @@ Decompress the .zip file.
 
 For GUI users 
 
-Oopen the fl2k-tbc-player.bat file.
+Open the fl2k-tbc-player.bat file.
 
 For CLI users 
 
