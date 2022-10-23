@@ -157,7 +157,7 @@ Also needed is removal of the extra line on each frame
 
 `./fl2k-tbc-player -u -s pal -G16 -tbcG -R example.tbc -B16 -tbcB -B example_chroma.tbc`
 
-You might see this:
+You might see this in Linux:
 
 `Allocating 6 zero-copy buffers
 libusb: error [op_dev_mem_alloc] alloc dev mem failed errno 12
