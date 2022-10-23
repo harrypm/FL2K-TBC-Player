@@ -18,7 +18,7 @@ The FL2K [Link 1](https://www.aliexpress.com/item/1005002872152601.html?) / [Lin
 
 VGA to RCA [Aliexpress](https://www.aliexpress.com/item/1005002872152601.html?)
 
-VGA to BNC Male/Female [Amazon UK](https://www.amazon.co.uk/gp/product/B0033AF5Y0/) /[Amazon USA](https://www.amazon.com/s?k=VGA+to+BNC+Cable&crid=30JGI1TOFQ5I9&sprefix=vga+to+bnc+cable%2Caps%2C165&ref=nb_sb_noss_1)
+VGA to BNC Male/Female [Amazon UK](https://www.amazon.co.uk/gp/product/B0033AF5Y0/) / [Amazon USA](https://www.amazon.com/s?k=VGA+to+BNC+Cable&crid=30JGI1TOFQ5I9&sprefix=vga+to+bnc+cable%2Caps%2C165&ref=nb_sb_noss_1)
 
 # Setup 
 
@@ -42,13 +42,13 @@ Red - Mono/Mono Mix Audio
 
 ## Windows 
 
-Simply download the windows relisese.
+Simply download the latest [Windows Release](https://github.com/vrunk11/fl2k_2/releases).
 
 Decompress the .zip file.
 
 For GUI users 
 
-Open the fl2k-tbc-player.bat file.
+Open the fl2k_2.bat file.
 
 For CLI users 
 
@@ -79,7 +79,7 @@ Before being able to use the device as a non-root user, the udev rules need to b
 
 ### Download The Player 
 
-`git clone https://github.com/vrunk11/fl2k-tbc-player/.git fl2k-tbc-player`
+`git clone https://github.com/vrunk11/fl2k_2/.git fl2k-tbc-player`
 
 To enter into the install directory use CD 
 
@@ -91,7 +91,7 @@ Compile the player with
 
 Run the software with 
 
-`fl2k-tbc-player [insurt example arguments]`
+`./fl2k_2 [arguments]`
 
 ## MacOS 
 
@@ -99,7 +99,7 @@ Support yet to be Implimented.
 
 # Usage 
 
-As its an VGA R-G-B adapter there is 3 ADC's
+As its an VGA R-G-B adapter so there is 3 ADC's
 
 To play a file on an ADC channel you do -R for red -G for green and -B for blue
 
@@ -109,9 +109,33 @@ Currently to make tbc playback possible you need to do the 16 to 8 bit conversio
 
 -R16 for red -G16 for green -B16 for blue 
 
-Also needed is removal of the extra line on each frame
+Also needed is removal of the extra line on each frame:
 
 -tbcR for red -tbcG for green -tbcB for blue
+
+## Standard Oprational Commands
+
+For windows just use fl2k_2.exe 
+
+### Composite output on the red channel:
+
+Linux:
+
+`./fl2k_2 -u -s ntsc -G16 -tbcG -R example.tbc`
+
+Windows:
+
+`fl2k_2.exe -u -s ntsc -G16 -tbcG -R example.tbc`
+
+### S-Video output with Luma on the green channel and Chroma on the blue channel:
+
+Linux:
+
+`./fl2k_2 -u -s pal -G16 -tbcG -R example.tbc -B16 -tbcB -B example_chroma.tbc`
+
+Windows:
+
+`fl2k_2.exe -u -s pal -G16 -tbcG -R example.tbc -B16 -tbcB -B example_chroma.tbc`
 
 # Commandlist
 
@@ -147,15 +171,7 @@ Also needed is removal of the extra line on each frame
 
 `-CgainB` Control Signal Gain Level 
 
-## Example Oprational Commands
-
-### Composite output on the red channel:
-
-`./fl2k-tbc-player -u -s ntsc -G16 -tbcG -R example.tbc`
-
-### S-Video output with Luma on the green channel and Chroma on the blue channel:
-
-`./fl2k-tbc-player -u -s pal -G16 -tbcG -R example.tbc -B16 -tbcB -B example_chroma.tbc`
+## Possible USB Issues
 
 You might see this in Linux:
 
